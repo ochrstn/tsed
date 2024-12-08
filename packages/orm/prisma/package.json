@@ -30,8 +30,8 @@
     "test:ci": "vitest run --coverage.thresholds.autoUpdate=true"
   },
   "dependencies": {
-    "@prisma/generator-helper": "^5.20.0",
-    "@prisma/internals": "^5.20.0",
+    "@prisma/generator-helper": "^6.0.1",
+    "@prisma/internals": "^6.0.1",
     "change-case": "^5.4.4",
     "fs-extra": "^11.2.0",
     "pluralize": "^8.0.0",
@@ -39,7 +39,7 @@
     "tslib": "2.7.0"
   },
   "devDependencies": {
-    "@prisma/client": "^5.20.0",
+    "@prisma/client": "^6.0.1",
     "@tsed/barrels": "workspace:*",
     "@tsed/core": "workspace:*",
     "@tsed/di": "workspace:*",
@@ -50,12 +50,12 @@
     "@types/change-case": "^2.3.1",
     "@types/pluralize": "0.0.33",
     "eslint": "9.12.0",
-    "prisma": "^4.16.2",
+    "prisma": "^6.0.1",
     "typescript": "5.4.5",
     "vitest": "2.1.2"
   },
   "peerDependencies": {
-    "@prisma/client": ">=5.0.0",
+    "@prisma/client": ">=6.0.0",
     "@tsed/core": "8.2.0",
     "@tsed/di": "8.2.0",
     "@tsed/json-mapper": "8.2.0",
