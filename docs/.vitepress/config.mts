@@ -306,11 +306,11 @@ export default defineConfig({
           },
           {
             text: "v6 (obsolete)",
-            link: "https://v5.tsed.dev"
+            link: "https://v6.tsed.dev"
           },
           {
             text: "v5 (obsolete)",
-            link: "https://v4.tsed.dev"
+            link: "https://v5.tsed.dev"
           },
           {
             text: "Contributing",
