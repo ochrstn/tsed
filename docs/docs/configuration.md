@@ -152,7 +152,7 @@ It is also possible to split the configuration by using the @@Module@@:
 
 - type: `string[]`
 
-List of glob pattern to scan directories which contains [Services](/docs/services)
+List of glob pattern to scan directories which contains [Services](/docs/prodivers)
 or [Middlewares](/docs/middlewares).
 
 ### middlewares
@@ -444,9 +444,8 @@ export class MyService {
 
 Decorators @@Constant@@ and @@Value@@ can be used in all classes including:
 
-- [Provider](/docs/providers),
+- [Provider & Service](/docs/providers),
 - [Interceptor](/docs/interceptors),
-- [Service](/docs/services),
 - [Controller](/docs/controllers),
 - [Middleware](/docs/middlewares).
 

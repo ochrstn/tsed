@@ -1,5 +1,5 @@
 import {Controller} from "@tsed/di";
-import {Docs} from "@tsed/swagger";
+import {Docs} from "@tsed/scalar";
 
 @Controller("/calendars")
 @Docs("api-v2") // display this controllers only for api-docs-v2

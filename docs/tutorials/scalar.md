@@ -45,7 +45,7 @@ When using helmet, there may be a problem with CSP, to solve this collision, con
         directives: {
           defaultSrc: [`'self'`],
           styleSrc: [`'self'`, `'unsafe-inline'`],
-          imgSrc: [`'self'`, "data:", "validator.swagger.io"],
+          imgSrc: [`'self'`, "data:", "validator.scalar.io"],
           scriptSrc: [`'self'`, `https: 'unsafe-inline'`]
         }
       }
@@ -75,14 +75,14 @@ Some options are available to configure Scalar, Ts.ED and the default spec infor
 | -------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | path                 | `/api-doc`                                                    | The url subpath to access to the documentation.                                                       |
 | specVersion          | `3.0.1`                                                       | The OpenSpec version.                                                                                 |
-| fileName             | `swagger.json`                                                | Swagger file name. By default swagger.json.                                                           |
-| doc                  | `hidden-doc`                                                  | The documentation key used by `@Docs` decorator to create several swagger documentations.             |
+| fileName             | `openapi.json`                                                | OpenAPI file name. By default openapi.json.                                                           |
+| doc                  | `hidden-doc`                                                  | The documentation key used by `@Docs` decorator to create several openapi documentations.             |
 | viewPath             | `${rootDir}/views/scalar.ejs` or `false`                      | The path to the ejs template. Set false to disabled scalar.                                           |
 | cssPath              | `${rootDir}/assets/scalar.css`                                | The path to the CSS file.                                                                             |
 | showExplorer         | `true`                                                        | Display the search field in the navbar.                                                               |
-| spec                 | `{swagger: "2.0"}`                                            | The default information spec.                                                                         |
-| specPath             | `${rootDir}/spec/swagger.base.json`                           | Load the base spec documentation from the specified path.                                             |
-| outFile              | `${rootDir}/spec/swagger.json`                                | Write the `swagger.json` spec documentation on the specified path.                                    |
+| spec                 | `{openapi: "3.1.0"}`                                          | The default information spec.                                                                         |
+| specPath             | `${rootDir}/spec/openapi.base.json`                           | Load the base spec documentation from the specified path.                                             |
+| outFile              | `${rootDir}/spec/openapi.json`                                | Write the `openapi.json` spec documentation on the specified path.                                    |
 | hidden               | `true`                                                        | Hide the documentation in the dropdown explorer list.                                                 |
 | options              | Scalar options                                                | Scalar options. See (https://github.com/scalar/scalar/tree/main/packages/api-reference#props)         |
 | operationIdFormatter | `(name: string, propertyKey: string, path: string) => string` | A function to generate the operationId.                                                               |
@@ -94,7 +94,7 @@ Some options are available to configure Scalar, Ts.ED and the default spec infor
 
 #### By decorators
 
-It's also possible to create several swagger documentations with the `doc` option:
+It's also possible to create several openapi documentations with the `doc` option:
 
 <<< @/tutorials/snippets/scalar/multi-spec.ts
 
@@ -109,10 +109,10 @@ You can use the `pathPatterns` options to include only controllers whose paths m
 ```typescript
 import {Configuration} from "@tsed/common";
 import "@tsed/platform-express";
-import "@tsed/scalar"; // import swagger Ts.ED module
+import "@tsed/scalar"; // import scalar Ts.ED module
 
 @Configuration({
-  swagger: [
+  scalar: [
     {
       path: "/api-admin",
       pathPatterns: ["/rest/admin/**"]

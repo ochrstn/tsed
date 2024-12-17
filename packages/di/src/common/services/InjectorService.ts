@@ -298,7 +298,7 @@ export class InjectorService extends Container {
   }
 
   /**
-   * Emit an event to all service. See service [lifecycle hooks](/docs/services.md#lifecycle-hooks).
+   * Emit an event to all service. See service [lifecycle hooks](/docs/hooks.md#lifecycle-hooks).
    * @param eventName The event name to emit at all services.
    * @param args List of the parameters to give to each service.
    * @returns A list of promises.

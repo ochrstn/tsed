@@ -1,10 +1,10 @@
 import "@tsed/platform-express";
-import "@tsed/swagger"; // import swagger Ts.ED module
+import "@tsed/scalar"; // import swagger Ts.ED module
 
 import {Configuration} from "@tsed/di";
 
 @Configuration({
-  swagger: [
+  scalar: [
     {
       path: "/doc",
       specVersion: "3.0.1"
