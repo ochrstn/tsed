@@ -81,7 +81,7 @@ It also possible to create several swagger documentations with `doc` option:
 
 ```typescript
 import {Configuration} from "@tsed/di";
-import "@tsed/scalar"; // import swagger Ts.ED module
+import "@tsed/scalar"; // import scalar Ts.ED module
 
 @Configuration({
   scalar: [
@@ -102,7 +102,7 @@ Then use `@Docs` decorators on your controllers to specify where the controllers
 
 ```typescript
 import {Controller} from "@tsed/di";
-import {Docs} from "@tsed/swagger";
+import {Docs} from "@tsed/scalar";
 
 @Controller("/calendars")
 @Docs("api-v2") // display this controllers only for api-docs-v2

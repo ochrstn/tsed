@@ -8,7 +8,7 @@ describe("CustomRepository", () => {
 
   it("should run method with the ctx", async () => {
     const ctx = PlatformTest.createRequestContext();
-    const service = await PlatformTest.invoke(CustomRepository, []);
+    const service = inject(CustomRepository);
 
     ctx.request.headers = {
       "x-api": "api"

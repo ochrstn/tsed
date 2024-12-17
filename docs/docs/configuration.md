@@ -152,7 +152,7 @@ It is also possible to split the configuration by using the @@Module@@:
 
 - type: `string[]`
 
-List of glob pattern to scan directories which contains [Services](/docs/prodivers)
+List of glob pattern to scan directories which contains [Services](/docs/providers)
 or [Middlewares](/docs/middlewares).
 
 ### middlewares
@@ -426,7 +426,7 @@ export class Server {}
 The configuration can be reused throughout your application in different ways.
 
 - With dependency injection in [Controller](/docs/controllers), [Middleware](/docs/middlewares)
-  , [Pipe](/docs/pipes) or any [Injectable](/docs/services) services.
+  , [Pipe](/docs/pipes) or any [Injectable](/docs/providers) services.
 - With the decorators @@Constant@@ and @@Value@@.
 
 ### From service (DI)

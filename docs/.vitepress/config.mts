@@ -7,7 +7,7 @@ import team from "../team.json";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Ts.ED a modern Node.js/Bun.js framework built with TypeScript",
+  title: "Ts.ED a modern Node.js/Bun.js framework built with TypeScript on top of Express.js/Koa.js",
   lastUpdated: true,
   description: "Ts.ED offers a flexible and easy-to-learn structure designed to enhance the developer experience. It provides decorators, guidelines, and supports Node.js, Bun.js, Express, Koa, CLI, and serverless architectures (e.g., AWS).",
   sitemap: {
@@ -24,7 +24,7 @@ export default defineConfig({
     ["meta", {name: "theme-color", content: "#5f67ee"}],
     ["meta", {property: "og:type", content: "website"}],
     ["meta", {property: "og:locale", content: "en"}],
-    ["meta", {property: "og:title", content: "Ts.ED - A Node.js and TypeScript Framework on top of Express/Koa.js."}],
+    ["meta", {property: "og:title", content: "Ts.ED a modern Node.js/Bun.js framework built with TypeScript on top of Express.js/Koa.js"}],
     ["meta", {property: "og:site_name", content: "Ts.ED"}],
     ["meta", {property: "og:image", content: "https://tsed.dev/tsed-og.png"}],
     ["meta", {property: "og:url", content: "https://tsed.dev/"}],

@@ -1,5 +1,5 @@
 import "@tsed/platform-express";
-import "@tsed/scalar"; // import swagger Ts.ED module
+import "@tsed/scalar"; // import scalar Ts.ED module
 
 import {Configuration} from "@tsed/di";
 
