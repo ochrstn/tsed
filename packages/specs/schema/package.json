@@ -2,7 +2,7 @@
   "name": "@tsed/schema",
   "description": "JsonSchema module for Ts.ED Framework",
   "type": "module",
-  "version": "8.3.5",
+  "version": "8.3.6",
   "source": "./src/index.ts",
   "main": "./lib/esm/index.js",
   "module": "./lib/esm/index.js",
@@ -63,9 +63,9 @@
     "webpack": "^5.75.0"
   },
   "peerDependencies": {
-    "@tsed/core": "8.3.5",
-    "@tsed/hooks": "8.3.5",
-    "@tsed/openspec": "8.3.5"
+    "@tsed/core": "8.3.6",
+    "@tsed/hooks": "8.3.6",
+    "@tsed/openspec": "8.3.6"
   },
   "peerDependenciesMeta": {
     "@tsed/core": {
