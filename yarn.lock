@@ -8447,8 +8447,8 @@ __metadata:
     typescript: "npm:5.4.5"
     vitest: "npm:2.1.2"
   peerDependencies:
-    "@temporalio/client": ^1.8.4
-    "@temporalio/worker": ^1.8.4
+    "@temporalio/client": ^1.11.6
+    "@temporalio/worker": ^1.11.6
   languageName: unknown
   linkType: soft
 
