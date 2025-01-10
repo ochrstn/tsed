@@ -3484,27 +3484,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/grpc-js@npm:~1.7.3":
-  version: 1.7.3
-  resolution: "@grpc/grpc-js@npm:1.7.3"
+"@grpc/grpc-js@npm:^1.10.7":
+  version: 1.12.5
+  resolution: "@grpc/grpc-js@npm:1.12.5"
   dependencies:
-    "@grpc/proto-loader": "npm:^0.7.0"
-    "@types/node": "npm:>=12.12.47"
-  checksum: 10/178901c938c85ec00f1f5aa0fd6058bde790cb77afc43133a37c9aaed1b9c117644827689012c7f2c22b353c6c406002a0fca61ce35e497579103c30e9d2c14c
+    "@grpc/proto-loader": "npm:^0.7.13"
+    "@js-sdsl/ordered-map": "npm:^4.4.2"
+  checksum: 10/4f8ead236dcab4d94e15e62d65ad2d93732d37f5cc52ffafe67ae00f69eae4a4c97d6d34a1b9eac9f30206468f2d15302ea6649afcba1d38929afa9d1e7c12d5
   languageName: node
   linkType: hard
 
-"@grpc/proto-loader@npm:^0.7.0":
-  version: 0.7.10
-  resolution: "@grpc/proto-loader@npm:0.7.10"
+"@grpc/proto-loader@npm:^0.7.13":
+  version: 0.7.13
+  resolution: "@grpc/proto-loader@npm:0.7.13"
   dependencies:
     lodash.camelcase: "npm:^4.3.0"
     long: "npm:^5.0.0"
-    protobufjs: "npm:^7.2.4"
+    protobufjs: "npm:^7.2.5"
     yargs: "npm:^17.7.2"
   bin:
     proto-loader-gen-types: build/bin/proto-loader-gen-types.js
-  checksum: 10/1fdc0b10480614cecc4bf52578756cbf59ec75f1bea37452947125eff81cd3ceabba04606247ed8361f97bcd00d147ca4118abc22b046cc0541cb749671b97d9
+  checksum: 10/7e2d842c2061cbaf6450c71da0077263be3bab165454d5c8a3e1ae4d3c6d2915f02fd27da63ff01f05e127b1221acd40705273f5d29303901e60514e852992f4
   languageName: node
   linkType: hard
 
@@ -3732,10 +3732,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@js-sdsl/ordered-map@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "@js-sdsl/ordered-map@npm:4.4.2"
+  checksum: 10/ac64e3f0615ecc015461c9f527f124d2edaa9e68de153c1e270c627e01e83d046522d7e872692fd57a8c514578b539afceff75831c0d8b2a9a7a347fbed35af4
+  languageName: node
+  linkType: hard
+
 "@jsdevtools/ono@npm:^7.1.3":
   version: 7.1.3
   resolution: "@jsdevtools/ono@npm:7.1.3"
   checksum: 10/d4a036ccb9d2b21b7e4cec077c59a5a83fad58adacbce89e7e6b77a703050481ff5b6d813aef7f5ff0a8347a85a0eedf599e2e6bb5784a971a93e53e43b10157
+  languageName: node
+  linkType: hard
+
+"@jsonjoy.com/base64@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "@jsonjoy.com/base64@npm:1.1.2"
+  peerDependencies:
+    tslib: 2
+  checksum: 10/d76bb58eff841c090d9bf69a073611ffa73c40a664ccbcea689f65961f57d7b24051269d06b437e4f6204285d6ba92f50f587c5e95c5f9e4f10b36a2ed4cd0c8
+  languageName: node
+  linkType: hard
+
+"@jsonjoy.com/json-pack@npm:^1.0.3":
+  version: 1.1.1
+  resolution: "@jsonjoy.com/json-pack@npm:1.1.1"
+  dependencies:
+    "@jsonjoy.com/base64": "npm:^1.1.1"
+    "@jsonjoy.com/util": "npm:^1.1.2"
+    hyperdyperid: "npm:^1.2.0"
+    thingies: "npm:^1.20.0"
+  peerDependencies:
+    tslib: 2
+  checksum: 10/c4b1148ba52405006c3a1bbf12610c30066310e76e4995ac4863e2d9ea43c7bf1037e3bba010954bcc11725d2fc83dc6fc13304989e93100eb2d6bce4a15b9ef
+  languageName: node
+  linkType: hard
+
+"@jsonjoy.com/util@npm:^1.1.2, @jsonjoy.com/util@npm:^1.3.0":
+  version: 1.5.0
+  resolution: "@jsonjoy.com/util@npm:1.5.0"
+  peerDependencies:
+    tslib: 2
+  checksum: 10/5b370183700cb40af52841294ba99c3dfb3dcb7fe2a122e15c737eb908d11392d314b75518874c7d631092bb29658ebe298d174b05baeb1adeb33884b9aa33cf
   languageName: node
   linkType: hard
 
@@ -4777,13 +4816,6 @@ __metadata:
   dependencies:
     "@octokit/openapi-types": "npm:^18.0.0"
   checksum: 10/4bcd18850d5397e5835f5686be88ad95e5d7c23e7d53f898b82a8ca5fc1f6a7b53816ef6f9f3b7a06799c0b030d259bf2bd50a258a1656df2dc7f3e533e334f8
-  languageName: node
-  linkType: hard
-
-"@opentelemetry/api@npm:^1.4.1":
-  version: 1.6.0
-  resolution: "@opentelemetry/api@npm:1.6.0"
-  checksum: 10/b8daefad2c862ed4e1e6b50df8946f08339a27aa83ac3b081bd4ed92e9ae2c365ecfc200f936ce08a1278b9a3c4103b5f33c2c19a495f68e245f727bba41af75
   languageName: node
   linkType: hard
 
@@ -6068,9 +6100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-darwin-arm64@npm:1.3.90"
+"@swc/core-darwin-arm64@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-darwin-arm64@npm:1.10.7"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
@@ -6082,9 +6114,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-darwin-x64@npm:1.3.90"
+"@swc/core-darwin-x64@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-darwin-x64@npm:1.10.7"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -6096,9 +6128,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.90"
+"@swc/core-linux-arm-gnueabihf@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.10.7"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
@@ -6110,9 +6142,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.90"
+"@swc/core-linux-arm64-gnu@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.10.7"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
@@ -6124,9 +6156,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-linux-arm64-musl@npm:1.3.90"
+"@swc/core-linux-arm64-musl@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-linux-arm64-musl@npm:1.10.7"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
@@ -6138,9 +6170,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-linux-x64-gnu@npm:1.3.90"
+"@swc/core-linux-x64-gnu@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-linux-x64-gnu@npm:1.10.7"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
@@ -6152,9 +6184,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-linux-x64-musl@npm:1.3.90"
+"@swc/core-linux-x64-musl@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-linux-x64-musl@npm:1.10.7"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -6166,9 +6198,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.90"
+"@swc/core-win32-arm64-msvc@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.10.7"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
@@ -6180,9 +6212,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.90"
+"@swc/core-win32-ia32-msvc@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.10.7"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
@@ -6194,9 +6226,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.3.90":
-  version: 1.3.90
-  resolution: "@swc/core-win32-x64-msvc@npm:1.3.90"
+"@swc/core-win32-x64-msvc@npm:1.10.7":
+  version: 1.10.7
+  resolution: "@swc/core-win32-x64-msvc@npm:1.10.7"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -6254,24 +6286,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.204":
-  version: 1.3.90
-  resolution: "@swc/core@npm:1.3.90"
+"@swc/core@npm:^1.3.102":
+  version: 1.10.7
+  resolution: "@swc/core@npm:1.10.7"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.3.90"
-    "@swc/core-darwin-x64": "npm:1.3.90"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.3.90"
-    "@swc/core-linux-arm64-gnu": "npm:1.3.90"
-    "@swc/core-linux-arm64-musl": "npm:1.3.90"
-    "@swc/core-linux-x64-gnu": "npm:1.3.90"
-    "@swc/core-linux-x64-musl": "npm:1.3.90"
-    "@swc/core-win32-arm64-msvc": "npm:1.3.90"
-    "@swc/core-win32-ia32-msvc": "npm:1.3.90"
-    "@swc/core-win32-x64-msvc": "npm:1.3.90"
-    "@swc/counter": "npm:^0.1.1"
-    "@swc/types": "npm:^0.1.5"
+    "@swc/core-darwin-arm64": "npm:1.10.7"
+    "@swc/core-darwin-x64": "npm:1.10.7"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.10.7"
+    "@swc/core-linux-arm64-gnu": "npm:1.10.7"
+    "@swc/core-linux-arm64-musl": "npm:1.10.7"
+    "@swc/core-linux-x64-gnu": "npm:1.10.7"
+    "@swc/core-linux-x64-musl": "npm:1.10.7"
+    "@swc/core-win32-arm64-msvc": "npm:1.10.7"
+    "@swc/core-win32-ia32-msvc": "npm:1.10.7"
+    "@swc/core-win32-x64-msvc": "npm:1.10.7"
+    "@swc/counter": "npm:^0.1.3"
+    "@swc/types": "npm:^0.1.17"
   peerDependencies:
-    "@swc/helpers": ^0.5.0
+    "@swc/helpers": "*"
   dependenciesMeta:
     "@swc/core-darwin-arm64":
       optional: true
@@ -6296,14 +6328,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10/214af37af77b968203d495745a86db985734527f4696243bda5fb9ce868830d70e7a2cdbb268da2ee994d9fcedded25073d7b709fa09b75e96f9ba7d13a63da0
-  languageName: node
-  linkType: hard
-
-"@swc/counter@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "@swc/counter@npm:0.1.1"
-  checksum: 10/bb974babd493ba01c0d4a95ab610c3fc15fbf609c08cb0342798e485f57ecc0950abbf84e07124e63c5fe610b492d9a8dd03701d3b9ef7329d9e8bf3cc44980f
+  checksum: 10/0c1e62c0eaa5750096d869be3f48e6a1346bed8a8736d90c70f841352e26d2618adff18d24a7d2b567fd1cfd96e655249b644f85cf16b115fad5791dc289929f
   languageName: node
   linkType: hard
 
@@ -6332,10 +6357,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/types@npm:^0.1.5":
-  version: 0.1.5
-  resolution: "@swc/types@npm:0.1.5"
-  checksum: 10/5f4de8c60d2623bed607c7fa1e0cee4ffc682af28d5ffe88dc9ed9903a1c2088ccc39f684689d6bb314595c9fbb560beaec773d633be515fb856ffc81d738822
+"@swc/types@npm:^0.1.17":
+  version: 0.1.17
+  resolution: "@swc/types@npm:0.1.17"
+  dependencies:
+    "@swc/counter": "npm:^0.1.3"
+  checksum: 10/ddef1ad5bfead3acdfc41f14e79ba43a99200eb325afbad5716058dbe36358b0513400e9f22aff32432be84a98ae93df95a20b94192f69b8687144270e4eaa18
   languageName: node
   linkType: hard
 
@@ -6348,117 +6375,112 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@temporalio/activity@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/activity@npm:1.8.4"
+"@temporalio/activity@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/activity@npm:1.11.6"
   dependencies:
-    "@temporalio/common": "npm:1.8.4"
+    "@temporalio/common": "npm:1.11.6"
     abort-controller: "npm:^3.0.0"
-  checksum: 10/7201de77c698603cf87d905363b2419c6b6ac3371e1c5516da94987f27c677e05c5aa4983ce9046aa6fd864967ba518bdf6aceee34c4b17cc20d98f9df12dca3
+  checksum: 10/fe8fee0f32c061256965625f7783523c3df4470f899323c170f2a1e79326d81006d423d379cf2dcea20c9edb51eefe6d95ea646cc73d98e7470f324e73a55b00
   languageName: node
   linkType: hard
 
-"@temporalio/client@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/client@npm:1.8.4"
+"@temporalio/client@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/client@npm:1.11.6"
   dependencies:
-    "@grpc/grpc-js": "npm:~1.7.3"
-    "@temporalio/common": "npm:1.8.4"
-    "@temporalio/proto": "npm:1.8.4"
+    "@grpc/grpc-js": "npm:^1.10.7"
+    "@temporalio/common": "npm:1.11.6"
+    "@temporalio/proto": "npm:1.11.6"
     abort-controller: "npm:^3.0.0"
-    long: "npm:^5.2.0"
-    uuid: "npm:^8.3.2"
-  checksum: 10/2785d105628a2c744b2cd70f95354f78b6b0332728d79df064f6a1600ab6f1e1d1177b444e194e7a30bfbae5ecd17886f7b9f773bdee03bfba503e50cb28ce9b
+    long: "npm:^5.2.3"
+    uuid: "npm:^9.0.1"
+  checksum: 10/e713624e0b6e43f5e3815aa89a95acbadd4a4a89458558bcab5b4930e7ef2337e262d2f156e6e111c212b98c3666ab3cda128dce833f3193a64dfd98e91d4ba3
   languageName: node
   linkType: hard
 
-"@temporalio/common@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/common@npm:1.8.4"
+"@temporalio/common@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/common@npm:1.11.6"
   dependencies:
-    "@opentelemetry/api": "npm:^1.4.1"
-    "@temporalio/proto": "npm:1.8.4"
-    long: "npm:^5.2.0"
+    "@temporalio/proto": "npm:1.11.6"
+    long: "npm:^5.2.3"
     ms: "npm:^3.0.0-canary.1"
-    proto3-json-serializer: "npm:^1.0.3"
-    protobufjs: "npm:^7.0.0"
-  checksum: 10/81cf38b5455ed1abd89ed74a10394adf757bedb8a9731e720d6de8257f4648af991ca438c83f4cb0a1e67b67aaa7b0abac0ccadc94c5d6c9bc7df7fc2e8b4461
+    proto3-json-serializer: "npm:^2.0.0"
+  checksum: 10/66ba10e84ab3f6be43f4b2facfcc377d74f13ee77838bac90f3510c1965a34434c2c34a3e3825c354cce1973430fecb29c86b5e1d5b400f6b86a7e040f500967
   languageName: node
   linkType: hard
 
-"@temporalio/core-bridge@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/core-bridge@npm:1.8.4"
+"@temporalio/core-bridge@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/core-bridge@npm:1.11.6"
   dependencies:
-    "@opentelemetry/api": "npm:^1.4.1"
-    "@temporalio/common": "npm:1.8.4"
+    "@temporalio/common": "npm:1.11.6"
     arg: "npm:^5.0.2"
-    cargo-cp-artifact: "npm:^0.1.6"
-    which: "npm:^2.0.2"
-  checksum: 10/98cf8215f978c53d3ccd7bacd8167b780127c5a59ee44b7dfe02b733357d3298891cd909964e1d8de2d80b3cb5683b9a97611eac29b8c60ccca17ed22abfc573
+    cargo-cp-artifact: "npm:^0.1.8"
+    which: "npm:^4.0.0"
+  checksum: 10/6b454fe776dce5fd2446fba4bc70c32c3907a521fa914debb16b049037b5e6f67a4b9a6d086f43d064b4d43a59d1acc9483560eac24cc1ed8d6664b2e4184b9a
   languageName: node
   linkType: hard
 
-"@temporalio/proto@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/proto@npm:1.8.4"
+"@temporalio/proto@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/proto@npm:1.11.6"
   dependencies:
-    long: "npm:^5.2.0"
-    protobufjs: "npm:^7.0.0"
-  checksum: 10/1951254e0002483b0426e6deb1d836d87db2249084a9a4f501898666f09d086b09e8f85c0deca9defa43ac3ecb15129126cf8c13b43be56b59c8bcb4f540959b
+    long: "npm:^5.2.3"
+    protobufjs: "npm:^7.2.5"
+  checksum: 10/a193c60abb41f962f1f79ec526b0f83912b7fd667f07d187c4991438dccfe98a79c2c7c8dae0d300dd71bbe25d752eda3a4d803b334883c649cf16d7ff23a028
   languageName: node
   linkType: hard
 
-"@temporalio/testing@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/testing@npm:1.8.4"
+"@temporalio/testing@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/testing@npm:1.11.6"
   dependencies:
-    "@grpc/grpc-js": "npm:~1.7.3"
-    "@temporalio/activity": "npm:1.8.4"
-    "@temporalio/client": "npm:1.8.4"
-    "@temporalio/common": "npm:1.8.4"
-    "@temporalio/core-bridge": "npm:1.8.4"
-    "@temporalio/proto": "npm:1.8.4"
-    "@temporalio/worker": "npm:1.8.4"
-    "@temporalio/workflow": "npm:1.8.4"
+    "@temporalio/activity": "npm:1.11.6"
+    "@temporalio/client": "npm:1.11.6"
+    "@temporalio/common": "npm:1.11.6"
+    "@temporalio/core-bridge": "npm:1.11.6"
+    "@temporalio/proto": "npm:1.11.6"
+    "@temporalio/worker": "npm:1.11.6"
+    "@temporalio/workflow": "npm:1.11.6"
     abort-controller: "npm:^3.0.0"
-  checksum: 10/674bfa5e4a574f17b88fa49c7554d5e993772499308a816967aaf6cd25b805fe31903312e304d71674a6281e2f47044d57daba3ea38bb7ed3c3f25e48739948c
+  checksum: 10/2e097bf8162cc487d2fdc267fb0fcc370af6b3ce1f47d711047f33fbaf1ede5fd5b828af23f359a25170b6b187e2c62689fb4f383176ca12d921e5bfd403dcfd
   languageName: node
   linkType: hard
 
-"@temporalio/worker@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/worker@npm:1.8.4"
+"@temporalio/worker@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/worker@npm:1.11.6"
   dependencies:
-    "@opentelemetry/api": "npm:^1.4.1"
-    "@swc/core": "npm:^1.2.204"
-    "@temporalio/activity": "npm:1.8.4"
-    "@temporalio/client": "npm:1.8.4"
-    "@temporalio/common": "npm:1.8.4"
-    "@temporalio/core-bridge": "npm:1.8.4"
-    "@temporalio/proto": "npm:1.8.4"
-    "@temporalio/workflow": "npm:1.8.4"
+    "@swc/core": "npm:^1.3.102"
+    "@temporalio/activity": "npm:1.11.6"
+    "@temporalio/client": "npm:1.11.6"
+    "@temporalio/common": "npm:1.11.6"
+    "@temporalio/core-bridge": "npm:1.11.6"
+    "@temporalio/proto": "npm:1.11.6"
+    "@temporalio/workflow": "npm:1.11.6"
     abort-controller: "npm:^3.0.0"
-    cargo-cp-artifact: "npm:^0.1.6"
-    heap-js: "npm:^2.2.0"
-    memfs: "npm:^3.4.6"
-    rxjs: "npm:^7.5.5"
+    heap-js: "npm:^2.3.0"
+    memfs: "npm:^4.6.0"
+    rxjs: "npm:^7.8.1"
     source-map: "npm:^0.7.4"
-    source-map-loader: "npm:^4.0.0"
+    source-map-loader: "npm:^4.0.2"
+    supports-color: "npm:^8.1.1"
     swc-loader: "npm:^0.2.3"
     unionfs: "npm:^4.5.1"
-    webpack: "npm:^5.75.0"
-  checksum: 10/cc25755405d232e883030845315544c1606a9af3b9926fea94ff9aaf2f0b9f9233a37063e4ea56b41ce59aa7fd7f9f692ee539efc57ce642e3f1d17250ce6cdd
+    webpack: "npm:^5.94.0"
+  checksum: 10/decd45f4184d39e034f628bf0f7a74c552e69653720e0ddaa1d4e39e827df69f28c825f1f1f4421dfc5bcde513973ad2a15b6eca58fefdc62b23dbb98a524549
   languageName: node
   linkType: hard
 
-"@temporalio/workflow@npm:1.8.4":
-  version: 1.8.4
-  resolution: "@temporalio/workflow@npm:1.8.4"
+"@temporalio/workflow@npm:1.11.6":
+  version: 1.11.6
+  resolution: "@temporalio/workflow@npm:1.11.6"
   dependencies:
-    "@temporalio/common": "npm:1.8.4"
-    "@temporalio/proto": "npm:1.8.4"
-  checksum: 10/e110222d87fad8d6be66e7efbc9b629536983c053b5e025266918ab288399b59da2e8a1e1f738afb9ab556034a7a703f25d56135196c8fbfe96fc506676cd0ec
+    "@temporalio/common": "npm:1.11.6"
+    "@temporalio/proto": "npm:1.11.6"
+  checksum: 10/0fea9cfa936ab88020519380ab2049f357c841e6c0864f849b3c9a9f38a59928a36edc609d1cfcbfef12c66dcc8385b3a7d25b03ef69fd781f86b15b472fe534
   languageName: node
   linkType: hard
 
@@ -8411,9 +8433,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tsed/temporal@workspace:packages/third-parties/temporal"
   dependencies:
-    "@temporalio/client": "npm:1.8.4"
-    "@temporalio/testing": "npm:1.8.4"
-    "@temporalio/worker": "npm:1.8.4"
+    "@temporalio/client": "npm:1.11.6"
+    "@temporalio/testing": "npm:1.11.6"
+    "@temporalio/worker": "npm:1.11.6"
     "@tsed/barrels": "workspace:*"
     "@tsed/core": "workspace:*"
     "@tsed/di": "workspace:*"
@@ -9289,7 +9311,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:>=10.0.0, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0, @types/node@npm:>=8.1.0":
+"@types/node@npm:>=10.0.0, @types/node@npm:>=13.7.0, @types/node@npm:>=8.1.0":
   version: 20.7.1
   resolution: "@types/node@npm:20.7.1"
   checksum: 10/00c816086fe4c771dbac9f5540d38c2dc741728dd47a819066b907c8b6d66bf9f4db048ef31a08ed2bca21ae31fcaef34d00847f746f301cfdcca2c946b3de3c
@@ -10236,13 +10258,6 @@ __metadata:
   version: 1.0.1
   resolution: "a-sync-waterfall@npm:1.0.1"
   checksum: 10/6069080aff936c88fc32f798cc172a8b541e35b993dc5d2e43b74b6f37c522744eec107e1d475d2c624825c6cb7d2ec9ec020dbe4520578afcae74f11902daa2
-  languageName: node
-  linkType: hard
-
-"abab@npm:^2.0.6":
-  version: 2.0.6
-  resolution: "abab@npm:2.0.6"
-  checksum: 10/ebe95d7278999e605823fc515a3b05d689bc72e7f825536e73c95ebf621636874c6de1b749b3c4bf866b96ccd4b3a2802efa313d0e45ad51a413c8c73247db20
   languageName: node
   linkType: hard
 
@@ -12153,12 +12168,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cargo-cp-artifact@npm:^0.1.6":
-  version: 0.1.8
-  resolution: "cargo-cp-artifact@npm:0.1.8"
+"cargo-cp-artifact@npm:^0.1.8":
+  version: 0.1.9
+  resolution: "cargo-cp-artifact@npm:0.1.9"
   bin:
     cargo-cp-artifact: bin/cargo-cp-artifact.js
-  checksum: 10/04c83f065f1692669a313f0a000d2bba3f210bb1fed52b23ad82884f1235aff6d0718520bafbe1331c09a964227c7f67375962d559bdfcbdd73ad78057755a7b
+  checksum: 10/51fcb9641cc025b39384163dce97b82be6af494bc215a70e197af0a01e30dc30173a56a383dd5dbf5b4b76785ab4e91649455128b2ed7d2c3ed3c27c79c7b632
   languageName: node
   linkType: hard
 
@@ -16464,7 +16479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-monkey@npm:^1.0.0, fs-monkey@npm:^1.0.4":
+"fs-monkey@npm:^1.0.0":
   version: 1.0.5
   resolution: "fs-monkey@npm:1.0.5"
   checksum: 10/7fcdf9267006800d61f1722cf9fa92ed8be8b3ed86614f6d43ab6f87a30f13bc784020465e20728ca4ea65ea7377bfcdbde52b54bf8c3cc2f43a6d62270ebf64
@@ -17560,10 +17575,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"heap-js@npm:^2.2.0":
-  version: 2.3.0
-  resolution: "heap-js@npm:2.3.0"
-  checksum: 10/dc40de5b110d1fbd863bdd5fcd61b9f1907acf17d2c80ce8c381a0f2825e3f05499a98058a47d13047cb476684422fa02b170dc152ae89deea08d53f4f5782fc
+"heap-js@npm:^2.3.0":
+  version: 2.6.0
+  resolution: "heap-js@npm:2.6.0"
+  checksum: 10/33c4e9a82b8698856cf807845866e5b3e94e2c4898937a99a160aea698c68fbe121f0bffc514af8d71d32eae36ca9516063c7e13d3624457318d5cf246a623a9
   languageName: node
   linkType: hard
 
@@ -17979,6 +17994,13 @@ __metadata:
   bin:
     husky: bin.js
   checksum: 10/421ccd8850378231aaefd70dbe9e4f1549b84ffe3a6897f93a202242bbc04e48bd498169aef43849411105d9fcf7c192b757d42661e28d06b934a609a4eb8771
+  languageName: node
+  linkType: hard
+
+"hyperdyperid@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "hyperdyperid@npm:1.2.0"
+  checksum: 10/64abb5568ff17aa08ac0175ae55e46e22831c5552be98acdd1692081db0209f36fff58b31432017b4e1772c178962676a2cc3c54e4d5d7f020d7710cec7ad7a6
   languageName: node
   linkType: hard
 
@@ -20799,10 +20821,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"long@npm:^5.0.0, long@npm:^5.2.0":
+"long@npm:^5.0.0":
   version: 5.2.3
   resolution: "long@npm:5.2.3"
   checksum: 10/9167ec6947a825b827c30da169a7384eec6c0c9ec2f0b9c74da2e93d81159bbe39fb09c3f13dae9721d4b807ccfa09797a7dd1012f5d478e3e33ca3c78b608e6
+  languageName: node
+  linkType: hard
+
+"long@npm:^5.2.3":
+  version: 5.2.4
+  resolution: "long@npm:5.2.4"
+  checksum: 10/c27c060a683d4d76dc48da12ded0ae49c610aaf10d028ec938829d7bebe916979dcc8b67ed71f8bf6d845a90151b66a9b741a3ee51ec874908e496c2a576697a
   languageName: node
   linkType: hard
 
@@ -21250,12 +21279,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memfs@npm:^3.4.6":
-  version: 3.6.0
-  resolution: "memfs@npm:3.6.0"
+"memfs@npm:^4.6.0":
+  version: 4.17.0
+  resolution: "memfs@npm:4.17.0"
   dependencies:
-    fs-monkey: "npm:^1.0.4"
-  checksum: 10/9c0d5dac636ed933e39df95e4ecf5b503c01f234da87550530381b16e3999c938c76f5e85a2410cb07a75a9d2c4b7dd405ef73b004d3e78ed686c044f96f5c00
+    "@jsonjoy.com/json-pack": "npm:^1.0.3"
+    "@jsonjoy.com/util": "npm:^1.3.0"
+    tree-dump: "npm:^1.0.1"
+    tslib: "npm:^2.0.0"
+  checksum: 10/346cfc8c7396a4716c362bb5c4eebf995c52927a5de4bb7b5bbc31a759b443f22b5a8087d8d71e93feebff33f10d735682f4fa53afb461607e832a4aa4c80eb9
   languageName: node
   linkType: hard
 
@@ -24537,18 +24569,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proto3-json-serializer@npm:^1.0.3":
-  version: 1.1.1
-  resolution: "proto3-json-serializer@npm:1.1.1"
+"proto3-json-serializer@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "proto3-json-serializer@npm:2.0.2"
   dependencies:
-    protobufjs: "npm:^7.0.0"
-  checksum: 10/20c5d28b6e8f4100fbae1eb78ae89019de1f6f19c352366f931d2a1c25ef48c1cfe0bbdb870e484bd8b3a0ea614295b9790e72655f0930ab445c7e10d1d99cec
+    protobufjs: "npm:^7.2.5"
+  checksum: 10/d588337f9a24a94ac14a456261af48ea07e6d0a8a00faebb0b689e79e83925383b9d3ea713184d6336d0bb743dd803f188710e3e8fbfb316586cd1e3f7862a56
   languageName: node
   linkType: hard
 
-"protobufjs@npm:^7.0.0, protobufjs@npm:^7.2.4":
-  version: 7.2.5
-  resolution: "protobufjs@npm:7.2.5"
+"protobufjs@npm:^7.2.5":
+  version: 7.4.0
+  resolution: "protobufjs@npm:7.4.0"
   dependencies:
     "@protobufjs/aspromise": "npm:^1.1.2"
     "@protobufjs/base64": "npm:^1.1.2"
@@ -24562,7 +24594,7 @@ __metadata:
     "@protobufjs/utf8": "npm:^1.1.0"
     "@types/node": "npm:>=13.7.0"
     long: "npm:^5.0.0"
-  checksum: 10/6c5aa62b61dff843f585f3acd9cb7a82d566de2dbf167a300b39afee91b04298c4b4aec61354b7c00308b40596f5f3f4b07d6246cfb4ee0abeaea25101033315
+  checksum: 10/408423506610f70858d7593632f4a6aa4f05796c90fd632be9b9252457c795acc71aa6d3b54bb7f48a890141728fee4ca3906723ccea6c202ad71f21b3879b8b
   languageName: node
   linkType: hard
 
@@ -26768,16 +26800,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-loader@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "source-map-loader@npm:4.0.1"
+"source-map-loader@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "source-map-loader@npm:4.0.2"
   dependencies:
-    abab: "npm:^2.0.6"
     iconv-lite: "npm:^0.6.3"
     source-map-js: "npm:^1.0.2"
   peerDependencies:
     webpack: ^5.72.1
-  checksum: 10/bdddd7a391bec85a02da47a4ab02d2c63e6736231b712913dd423f1c2a4e8668888813a9213014fcf41fc6991b61c795d703f3a684b7e1c7335bd0a8f9f23ccd
+  checksum: 10/9a33adfe21b804b2ac5be05d159dda0dd8e86ac8650816638dcff0aa982e7559ced366ed68800b82c85a48482df9072694482757ab8746633c75bae75da698b6
   languageName: node
   linkType: hard
 
@@ -27991,6 +28022,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"thingies@npm:^1.20.0":
+  version: 1.21.0
+  resolution: "thingies@npm:1.21.0"
+  peerDependencies:
+    tslib: ^2
+  checksum: 10/5c3954b67391d1432c252cb7089f29480e2164f06987a63d83c9747aa6999bfc313d6edfce71ed967316a3378dfcaf38f35ea77aaa5d423edaf776b8ff854f83
+  languageName: node
+  linkType: hard
+
 "through2@npm:^2.0.0, through2@npm:~2.0.0":
   version: 2.0.5
   resolution: "through2@npm:2.0.5"
@@ -28235,6 +28275,15 @@ __metadata:
   version: 0.6.6
   resolution: "traverse@npm:0.6.6"
   checksum: 10/8c300c9d15aa6149d6086eedd5f42475a4bfd942de1ac54ef8acc7026c970943d207a4b1d92ebdf86a73a030be11367ec50d307dddf5296df8d615199210bc01
+  languageName: node
+  linkType: hard
+
+"tree-dump@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "tree-dump@npm:1.0.2"
+  peerDependencies:
+    tslib: 2
+  checksum: 10/ddcde4da9ded8edc2fa77fc9153ef8d7fba9cd5f813db27c30c7039191b50e1512b7106f0f4fe7ccaa3aa69f85b4671eda7ed0b9f9d34781eb26ebe4593ad4eb
   languageName: node
   linkType: hard
 
@@ -29197,6 +29246,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uuid@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "uuid@npm:9.0.1"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 10/9d0b6adb72b736e36f2b1b53da0d559125ba3e39d913b6072f6f033e0c87835b414f0836b45bcfaf2bdf698f92297fea1c3cc19b0b258bc182c9c43cc0fab9f2
+  languageName: node
+  linkType: hard
+
 "v8-compile-cache-lib@npm:^3.0.1":
   version: 3.0.1
   resolution: "v8-compile-cache-lib@npm:3.0.1"
@@ -29696,7 +29754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.75.0":
+"webpack@npm:^5.75.0, webpack@npm:^5.94.0":
   version: 5.97.1
   resolution: "webpack@npm:5.97.1"
   dependencies:

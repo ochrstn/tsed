@@ -31,9 +31,9 @@
     "tslib": "2.7.0"
   },
   "devDependencies": {
-    "@temporalio/client": "1.8.4",
-    "@temporalio/testing": "1.8.4",
-    "@temporalio/worker": "1.8.4",
+    "@temporalio/client": "1.11.6",
+    "@temporalio/testing": "1.11.6",
+    "@temporalio/worker": "1.11.6",
     "@tsed/barrels": "workspace:*",
     "@tsed/core": "workspace:*",
     "@tsed/di": "workspace:*",
