@@ -33,7 +33,7 @@ describe("Temporal Worker", () => {
       connection: testEnv.nativeConnection
     });
 
-    expect((worker.options.activities as any).greet).toBeDefined();
+    expect(worker.options.activities.has("greet")).toBeTruthy();
 
     const {client} = testEnv;
 
